@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Style.css">
+ 
+</head>
+
+<body id="bd">
+   
+  <script language="javascript" type="text/javascript" src="navbar.txt" ></script>
+    <div class="contact ContactBackground">
+        <form action="Contact.html" class="Form" id="form" onsubmit="return validateForm()">
+            <div class="column">
+                <input type="text" id="name" placeholder="Enter Your Name" onblur="validate1()" >
+                <span id="err1"></span><br><br>
+            </div>
+            <div class="column">
+                <input type="tel" id="Tel" placeholder="Enter Contact Number" required>
+                <br><br>
+            </div>
+            <div class="column">
+                <input type="email" id="mailid" placeholder="Email Id" onblur="validate2()" required>
+                <span id="err2"></span><br><br>
+            </div>
+            <div class="column">
+                <textarea name="Message" placeholder="Message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <input class="btn" type="submit" value="SUBMIT">
+               <button class="btn" id="Resetform">RESET</button>
+            </div>
+        </form>
+    </div>
+    <script language="javascript" type="text/javascript" src="footer.txt" ></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="JS.js"></script>
+</body>
+
+
+
+</html>
